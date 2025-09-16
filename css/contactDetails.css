@@ -1,0 +1,370 @@
+.contact{
+    position: absolute;
+    left: 16%;
+    width: 68%;
+
+    background-color: #1a1a1a;
+    color: #ffffff;
+
+    padding: 60px 25px 0px 25px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    border: solid white 1px;
+    border-radius: 30px;
+    bottom: 0;
+    margin-bottom: -300px;
+    font-size: 20px;
+}
+
+@property --angle{
+
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+
+}
+
+.contact::after{
+
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: conic-gradient(from var(--angle), transparent 50%,#04e2ff, rgb(255, 255, 255), #04e2ff, rgb(255, 255, 255), #04e2ff, rgb(255, 255, 255));
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -5;
+    padding: 5px;
+    border-radius: 30px;
+    animation: 5s spinning linear infinite;
+
+}
+@keyframes spinning{
+
+    from{
+        --angle: 0deg;
+    }
+    to{
+        --angle: 360deg;
+    }
+
+}
+
+.contactRight {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px 20px 20px;
+    margin: -30px 0px 30px 0px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 30px;
+}
+.contactLeft{
+    width: 70%;
+    display: flex;
+    padding: 0 20px;
+    margin-top: -10px;
+}
+
+.bx-phone,
+.bx-at,
+.bx-location,
+.bx-user-square{
+
+    font-size: 40px;
+
+}
+.fa-github,
+.fa-linkedin,
+.fa-facebook,
+.fa-instagram{
+
+    font-size: 40px;
+
+}
+
+.contactLeft .contactPhone, 
+.contactEmail, 
+.contactLocation,
+.contactReference{
+    text-align: center;
+}
+
+.bx-phone:hover,
+.bx-at:hover,
+.bx-location:hover,
+.bx-user-square:hover{
+
+    color:#04e2ff;
+
+}
+
+.contactPhone:hover{
+
+    cursor: pointer;
+
+}
+
+.contactPhone::after{
+
+    color: black;
+    background: #04e2ff;
+
+    content: '';
+
+    width: 0%;
+    height: 4px;
+    
+    display: block;
+    margin: auto;
+
+    transition: 0.5s;
+
+}
+.contactPhone:hover::after{
+
+    width: 100%;
+
+}
+.contactPhone:hover .phoneNr{
+
+    opacity: 100%;
+
+}
+.contactPhone .phoneNr{
+
+    opacity: 0%;
+    transition: 0.5s;
+
+}
+
+.contactEmail:hover{
+
+    cursor: pointer;
+
+}
+.contactEmail::after{
+
+    color: black;
+    background: #04e2ff;
+
+    content: '';
+
+    width: 0%;
+    height: 4px;
+    
+    display: block;
+    margin: auto;
+
+    transition: 0.5s;
+
+}
+.contactEmail:hover::after{
+
+    width: 100%;
+
+}
+.contactEmail:hover .email{
+
+    opacity: 100%;
+
+}
+.contactEmail .email{
+
+    opacity: 0%;
+    transition: 0.5s;
+
+}
+
+.contactLocation:hover{
+
+    cursor: pointer;
+
+}
+.contactLocation::after{
+
+    color: black;
+    background: #04e2ff;
+
+    content: '';
+
+    width: 0%;
+    height: 4px;
+    
+    display: block;
+    margin: auto;
+
+    transition: 0.5s;
+
+}
+.contactLocation:hover::after{
+
+    width: 100%;
+
+}
+.contactLocation:hover .location{
+
+    opacity: 100%;
+
+}
+.contactLocation .location{
+
+    opacity: 0%;
+    transition: 0.5s;
+
+}
+
+.contactReference:hover{
+
+    cursor: pointer;
+
+
+}
+.contactReference::after{
+
+    color: black;
+    background: #04e2ff;
+
+    content: '';
+
+    width: 0%;
+    height: 4px;
+    
+    display: block;
+    margin: auto;
+
+    transition: 0.5s;
+
+}
+.contactReference:hover::after{
+
+    width: 100%;
+
+}
+.contactReference:hover .reference{
+
+    opacity: 100%;
+
+}
+.contactReference .reference{
+
+    opacity: 0%;
+    transition: 0.5s;
+
+}
+
+.contactReference{
+
+    padding-left: 60px;
+    overflow: visible;
+
+}
+
+.fa-github:hover,
+.fa-facebook:hover,
+.fa-linkedin:hover,
+.fa-instagram:hover{
+
+    color:#04e2ff;
+    cursor: pointer;
+
+}
+
+.drop {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #04e2ff;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    opacity: 0;
+}
+
+.splash-container {
+    position: absolute;
+    top: -190%;
+    left: 1290px;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.splash-drop {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background-color: #04e2ff;
+    border-radius: 50%;
+    opacity: 0;
+}
+
+.contactReference.active .drop {
+    animation: dropArc 1.8s ease forwards;
+}
+
+.contactReference.active .splash-drop:nth-child(1) {
+    animation: splash1 1s ease-out 1s forwards;
+}
+.contactReference.active .splash-drop:nth-child(2) {
+    animation: splash2 1s ease-out 1s forwards;
+}
+.contactReference.active .splash-drop:nth-child(3) {
+    animation: splash3 1s ease-out 1s forwards;
+}
+.contactReference.active .splash-drop:nth-child(4) {
+    animation: splash4 0.6s ease-out 1s forwards;
+}
+.contactReference.active .splash-drop:nth-child(5) {
+    animation: splash5 0.6s ease-out 1s forwards;
+}
+.contactReference.active .splash-drop:nth-child(6) {
+    animation: splash6 0.6s ease-out 1s forwards;
+}
+.contactReference.active .splash-drop:nth-child(7) {
+    animation: splash7 0.6s ease-out 1s forwards;
+}
+
+@keyframes dropArc {
+    0% {
+        opacity: 1;
+        transform: translateY(-50%) translateX(0);
+    }  
+    100% {
+        transform: translateY(-700px) translateX(1280px);
+        opacity: 0;
+        scale: 0.5;
+    }
+}
+
+@keyframes splash1 {
+    0% { opacity: 0.8; transform: translate(0, 0); }
+    100% { opacity: 0; transform: translate(-180px, -180px); scale: 0.3; }
+}
+@keyframes splash2 {
+    0% { opacity: 0.8; transform: translate(0, 0); }
+    100% { opacity: 0; transform: translate(280px, -240px); scale: 0.3; }
+}
+@keyframes splash3 {
+    0% { opacity: 0.8; transform: translate(0, 0); }
+    100% { opacity: 0; transform: translate(0, 180px); scale: 0.3; }
+}
+@keyframes splash4 {
+    0% { opacity: 0.8; transform: translate(0, 0); }
+    100% { opacity: 0; transform: translate(-330px, -330px); scale: 0.3; } /* Further up-left */
+}
+@keyframes splash5 {
+    0% { opacity: 0.8; transform: translate(0, 0); }
+    100% { opacity: 0; transform: translate(230px, -230px); scale: 0.3; } /* Further up-right */
+}
+@keyframes splash6 {
+    0% { opacity: 0.8; transform: translate(0, 0); }
+    100% { opacity: 0; transform: translate(-240px, 0); scale: 0.3; } /* Further left */
+}
+@keyframes splash7 {
+    0% { opacity: 0.8; transform: translate(0, 0); }
+    100% { opacity: 0; transform: translate(440px, 0); scale: 0.3; } /* Further right */
+}

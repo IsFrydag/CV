@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.head {
+    background-image: linear-gradient(rgb(0, 0, 0), rgba(4, 9, 30, 0.733), rgba(4, 9, 30, 0.315), rgb(0, 0, 0)), url(/images/Background.JPG);
+    border-bottom: solid black 5px;
+    min-height: 60vh;
+    min-width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.name {
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.first-letter, .first-rest, .surname-first, .surname-rest {
+    display: inline-block;
+    transition: all 1s ease;
+}
+
+.first-letter {
+    transform: translateX(110px) rotate(-25deg);
+    position: relative;
+    z-index: 1;
+    font-size: 240px;
+    animation: colorWave2 5s infinite ease-in-out;
+}
+
+.first-rest {
+    transform: translateX(-120px) translateY(60px);
+    opacity: 0;
+    color: #04e2ff;
+}
+
+.surname-first {
+    transform: translateX(-105px) translateY(18px) rotate(-25deg);
+    position: relative;
+    z-index: 2;
+    font-size: 240px;
+    animation: colorWave 5s infinite ease-in-out;
+}
+
+.surname-rest {
+    transform: translateX(-120px) translateY(60px);
+    opacity: 0;
+    color: #04e2ff;
+}
+
+.name:hover .first-letter {
+    transform: translateX(-60px) rotate(0deg);
+}
+
+.name:hover .first-rest {
+    transform: translateX(-70px) translateY(60px);
+    opacity: 1;
+}
+
+.name:hover .surname-first {
+    transform: translateX(0) rotate(0deg);
+}
+
+.name:hover .surname-rest {
+    transform: translateX(-70px) translateY(60px);
+    opacity: 1;
+}
+
+@keyframes colorWave {
+    0% { color: #ffffff; }
+    25% { color: #04e2ff; }
+    50% { color: #ffffff; }
+    75% { color: #04e2ff; }
+    100% { color: #ffffff; }
+}
+@keyframes colorWave2 {
+    0% { color: #04e2ff; }
+    25% { color: #ffffff; }
+    50% { color: #04e2ff; }
+    75% { color: #ffffff; }
+    100% { color: #04e2ff; }
+}
+

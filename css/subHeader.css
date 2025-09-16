@@ -1,0 +1,586 @@
+.subHeadSection{
+
+    min-height: 100vh;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-top: -20px;
+    margin-bottom: 300px;
+    padding: 0px 0px 0px 0px;
+
+}
+
+.subHeadTitle{
+
+    height: 50px;
+    width: 200px;
+    position: absolute;
+    text-align: center;
+    background-color: black;
+    border: solid white 2px;
+    border-radius: 160px;
+    padding: 70px 40px 160px 40px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Megrim', cursive;
+    
+
+}
+
+.subHeadTitle:hover{
+
+    cursor: pointer;
+    color: black;
+    background-color: white;
+
+}
+
+.subHeadTitle::after{
+
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: conic-gradient(from var(--angle),#04e2ff, rgb(255, 255, 255), #04e2ff, rgb(255, 255, 255), #04e2ff, rgb(255, 255, 255), #04e2ff);
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -100;
+    padding: 10px;
+    animation: 5s spinning linear infinite;
+    border-radius: 160px;
+
+    opacity: 0;
+    transition: opacity 5s;
+
+}
+
+.subHeadTitle.active::after{
+
+    opacity: 1;
+
+}
+
+.subHeadTitle::before {
+    content: '';
+    position: absolute;
+    inset: -40px; /* sits further out than ::after */
+    border-radius: 50%;
+    z-index: -2;
+    background: radial-gradient(circle,
+        rgba(4, 226, 255, 0.815) 40%,
+        transparent 70%);
+    animation: pulseRing 3s ease-in-out infinite;
+    opacity: 0.6;
+}
+
+.subHeadTitle.active::before {
+	animation: none;  /* stop the pulsing */
+	opacity: 0;       /* fade away smoothly */
+}
+
+@keyframes pulseRing {
+    0%, 100% {
+        transform: scale(0.9);
+        opacity: 0.4;
+    }
+    50% {
+        transform: scale(1.2);
+        opacity: 0.8;
+    }
+}
+
+
+
+.infoCircle{
+
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    background-color: white;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 120px;
+    padding: 60px 60px 60px 60px;
+    font-size: 25px;
+    font-weight: bold;
+
+}
+
+.infoCircle::after{
+
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: conic-gradient(from var(--angle),#04e2ff, rgb(255, 255, 255), #04e2ff, rgb(255, 255, 255), #04e2ff, rgb(255, 255, 255), #04e2ff);
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -100;
+    padding: 10px;
+    animation: 5s spinning linear infinite;
+    border-radius: 160px;
+    opacity: 0;
+    transition: opacity 1s;
+
+}
+
+.infoCircle.glow::after {
+    opacity: 1;
+}
+
+.infoCircle.active:hover {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-family: 'Megrim', cursive;
+}
+
+#personInfo{
+    
+    left: 18%;
+    top: 22%;
+
+}
+#secondaryEd{
+
+    left: 69%;
+    top: 30%;
+
+}
+
+#tertiaryEd{
+
+    left: 12%;
+    top: 81%;
+
+}
+
+#skills{
+
+    left: 86%;
+    top: 77%;
+
+}
+
+.line {
+    position: absolute;
+    background-color: #04e2ff;
+    height: 6px;
+    border-radius: 4px;
+    opacity: 0;
+    transform: left center; /* Animation grows from the left */
+    transition: width 0.5s ease-in-out, opacity 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.line.active {
+    opacity: 1;
+    box-shadow: 0 0 12px #04e2ff;
+}
+
+#line1 {
+    left: 39%;
+    top: 40%;
+    z-index: -10;
+    transform: rotate(210deg);
+    width: 0px;
+    height: 6px;
+}
+
+#line2 {
+    left: 35.4%;
+    top: 37.4%;
+    z-index: -10;
+    transform: rotate(0deg);
+    width: 0px;
+    height: 6px;
+}
+
+#line3 {
+    left: 31.9%;
+    top: 40.0%;
+    z-index: -10;
+    transform: rotate(-40deg);
+    width: 0px;
+    height: 6px;
+}
+
+#line4 {
+    left: 28.5%;
+    top: 43.7%;
+    z-index: -10;
+    transform: rotate(-15deg);
+    width: 0px;
+    height: 6px;
+}
+
+#line5 {
+    left: 25.1%;
+    top: 42.1%;
+    z-index: -10;
+    transform: rotate(40deg);
+    width: 0px;
+    height: 6px;
+}
+
+#line6 {
+    left: 37.6%;
+    top: 66.9%;
+    z-index: -10;
+    transform: rotate(-45deg);
+    width: 0px;
+    height: 6px;
+}
+
+#line7 {
+    left: 35.6%;
+    top: 76.2%;
+    z-index: -10;
+    transform: rotate(90deg);
+    width: 0px;
+    height: 6px;
+}
+
+#line8 {
+    left: 34.1%;
+    top: 85.6%;
+    z-index: -10;
+    transform: rotate(-45deg);
+    width: 0px;
+    height: 6px;
+}
+
+#line9 {
+    left: 32.3%;
+    top: 86.9%;
+    z-index: -10;
+    transform: rotate(45deg);
+    width: 0px;
+    height: 6px;
+}
+
+#line10 {
+    left: 29.8%;
+    top: 84.7%;
+    z-index: -10;
+    transform: rotate(0deg);
+    width: 0px;
+    height: 6px;
+}
+
+#line11 {
+    left: 32.7%;
+    top: 35.9%;
+    z-index: -10;
+    transform: rotate(30deg);
+    width: 0px;
+    height: 6px;
+}
+
+#line12 {
+    left: 27.3%;
+    top: 86.8%;
+    z-index: -10;
+    transform: rotate(-45deg);
+    width: 0px;
+    height: 6px;
+}
+
+#line13 {
+    left: 24.3%;
+    top: 88.9%;
+    z-index: -10;
+    transform: rotate(0deg);
+    width: 0px;
+    height: 6px;
+}
+
+#line14 {
+    left: 21.0%;
+    top: 89.6%;
+    z-index: -10;
+    transform: rotate(-13deg);
+    width: 0px;
+    height: 6px;
+}
+
+#line15 {
+    left: 41.8%;
+    top: 62.1%;
+    z-index: -10;
+    transform: rotate(-20deg);
+    width: 0px;
+    height: 6px;
+}
+
+#line16 {
+    left: 56.8%;
+    top: 53.1%;
+    z-index: -10;
+    transform: rotate(20deg);
+    width: 0px;
+    height: 6px;
+}
+
+#line17 {
+    left: 59.6%;
+    top: 57.0%;
+    z-index: -10;
+    transform: rotate(40deg);
+    width: 0px;
+    height: 6px;
+}
+
+#line18 {
+    left: 63.0%;
+    top: 59.3%;
+    z-index: -10;
+    transform: rotate(-10deg);
+    width: 0px;
+    height: 6px;
+}
+
+#line19 {
+    left: 64.9%;
+    top: 59.6%;
+    z-index: -10;
+    transform: rotate(15deg);
+    width: 0px;
+    height: 6px;
+}
+
+#line20 {
+    left: 67.1%;
+    top: 59.1%;
+    z-index: -10;
+    transform: rotate(-25deg);
+    width: 0px;
+    height: 6px;
+}
+
+#line21 {
+    left: 67.6%;
+    top: 56.0%;
+    z-index: -10;
+    transform: rotate(60deg);
+    width: 0px;
+    height: 6px;
+}
+
+#line22 {
+    left: 67.8%;
+    top: 52.0%;
+    z-index: -10;
+    transform: rotate(130deg);
+    width: 0px;
+    height: 6px;
+}
+
+#line23 {
+    left: 69.6%;
+    top: 48.9%;
+    z-index: -10;
+    transform: rotate(152deg);
+    width: 0px;
+    height: 6px;
+}
+
+#line24 {
+    left: 68.0%;
+    top: 60.8%;
+    z-index: -10;
+    transform: rotate(39deg);
+    width: 0px;
+    height: 6px;
+}
+
+#line25 {
+    left: 68.4%;
+    top: 65.9%;
+    z-index: -10;
+    transform: rotate(90deg);
+    width: 0px;
+    height: 6px;
+}
+
+#line26 {
+    left: 66.4%;
+    top: 73.0%;
+    z-index: -10;
+    transform: rotate(130deg);
+    width: 0px;
+    height: 6px;
+}
+
+#line27 {
+    left: 66.0%;
+    top: 79.7%;
+    z-index: -10;
+    transform: rotate(75deg);
+    width: 0px;
+    height: 6px;
+}
+
+#line28 {
+    left: 67.5%;
+    top: 85.0%;
+    z-index: -10;
+    transform: rotate(44deg);
+    width: 0px;
+    height: 6px;
+}
+
+#line29 {
+    left: 70.2%;
+    top: 86.9%;
+    z-index: -10;
+    transform: rotate(-10deg);
+    width: 0px;
+    height: 6px;
+}
+
+#line30 {
+    left: 72.6%;
+    top: 87.2%;
+    z-index: -10;
+    transform: rotate(19deg);
+    width: 0px;
+    height: 6px;
+}
+
+#line31 {
+    left: 74.4%;
+    top: 90.3%;
+    z-index: -10;
+    transform: rotate(60deg);
+    width: 0px;
+    height: 6px;
+}
+
+#line32 {
+    left: 76.1%;
+    top: 93.5%;
+    z-index: -10;
+    transform: rotate(40deg);
+    width: 0px;
+    height: 6px;
+}
+
+#line33 {
+    left: 77.3%;
+    top: 94.4%;
+    z-index: -10;
+    transform: rotate(0deg);
+    width: 0px;
+    height: 6px;
+}
+
+#line34 {
+    left: 80.2%;
+    top: 93.3%;
+    z-index: -10;
+    transform: rotate(-20deg);
+    width: 0px;
+    height: 6px;
+}
+
+#line35 {
+    left: 82.9%;
+    top: 93.8%;
+    z-index: -10;
+    transform: rotate(30deg);
+    width: 0px;
+    height: 6px;
+}
+
+#line36 {
+    left: 85.3%;
+    top: 93.3%;
+    z-index: -10;
+    transform: rotate(-40deg);
+    width: 0px;
+    height: 6px;
+}
+
+#line37 {
+    left: 69.3%;
+    top: 90.2%;
+    z-index: -10;
+    transform: rotate(70deg);
+    width: 0px;
+    height: 6px;
+}
+
+#line38 {
+    left: 62.1%;
+    top: 62.3%;
+    z-index: -10;
+    transform: rotate(70deg);
+    width: 0px;
+    height: 6px;
+}
+
+#line39 {
+    left: 62.1%;
+    top: 62.3%;
+    z-index: -10;
+    transform: rotate(70deg);
+    width: 0px;
+    height: 6px;
+}
+
+#line40 {
+    left: 35.5%;
+    top: 70.5%;
+    z-index: -10;
+    transform: rotate(-1deg);
+    width: 0px;
+    height: 6px;
+}
+
+#line1.active { width: 100px; }
+#line2.active { width: 80px; }
+#line3.active { width: 80px; }
+#line4.active { width: 80px; }
+#line5.active { width: 80px; }
+#line6.active { width: 100px; }
+#line7.active { width: 110px; }
+#line8.active { width: 100px; }
+#line9.active { width: 60px; }
+#line10.active { width: 60px; }
+#line11.active { width: 60px; }
+#line12.active { width: 60px; }
+#line13.active { width: 70px; }
+#line14.active { width: 70px; }
+#line15.active { width: 67px; }
+#line16.active { width: 67px; }
+#line17.active { width: 80px; }
+#line18.active { width: 40px; }
+#line19.active { width: 50px; }
+#line20.active { width: 50px; }
+#line21.active { width: 50px; }
+#line22.active { width: 50px; }
+#line23.active { width: 50px; }
+#line24.active { width: 50px; }
+#line25.active { width: 70px; }
+#line26.active { width: 90px; }
+#line27.active { width: 65px; }
+#line28.active { width: 65px; }
+#line29.active { width: 52px; }
+#line30.active { width: 52px; }
+#line31.active { width: 52px; }
+#line32.active { width: 30px; }
+#line33.active { width: 60px; }
+#line34.active { width: 60px; }
+#line35.active { width: 60px; }
+#line36.active { width: 60px; }
+#line37.active { width: 60px; }
+#line38.active { width: 60px; }
+#line39.active { width: 60px; }
+#line40.active { width: 60px; }

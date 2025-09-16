@@ -1,0 +1,34 @@
+.details,
+.education,
+.tertiaryEd,
+.skills {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    padding: 0 20px;
+    margin: 0 auto;
+    width: 90%;
+    transition: none; /* handled by JS classes */
+}
+
+/* expanding */
+.expand {
+    transition: max-height 1s ease, opacity 1s ease, padding 1s ease;
+    max-height: 1000px; /* adjust depending on content */
+    opacity: 1;
+    padding: 20px;
+}
+
+/* collapsing */
+.collapse {
+    transition: max-height 0.2s ease, opacity 0.2s ease, padding 0.2s ease;
+    max-height: 0;
+    opacity: 0;
+    padding: 0 20px;
+}
+
+.spacer{
+
+    height: 300px;
+
+}

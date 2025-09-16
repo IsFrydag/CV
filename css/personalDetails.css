@@ -1,0 +1,140 @@
+.details {
+
+    padding: 50px 0px 0px 0px;
+    margin-bottom: -370px
+    
+}
+
+.details1{
+
+    display: flex;
+    padding: 15px 0px 15px 0px;
+    font-size: 25px;
+
+}
+
+.idN{
+
+    font-weight: bold;
+    margin-left: 550px;
+    font-size: 25px;
+
+}
+.idTxt{
+
+    padding-top: 5px;
+    margin-left: 300px;
+
+}
+
+.dateOB{
+
+    font-weight: bold;
+    margin-left: 550px;
+    font-size: 25px;
+
+}
+.dateTxt{
+
+    padding-top: 5px;
+    margin-left: 250px;
+
+}
+
+.age{
+
+    font-weight: bold;
+    margin-left: 550px;
+    font-size: 25px;
+
+}
+.ageTxt{
+
+    padding-top: 5px;
+    margin-left: 395px;
+
+}
+
+.sex{
+
+    font-weight: bold;
+    margin-left: 550px;
+    font-size: 25px;
+
+}
+.sexTxt{
+
+    padding-top: 5px;
+    margin-left: 397px;
+
+}
+
+.homeL{
+
+    font-weight: bold;
+    margin-left: 550px;
+    font-size: 25px;
+
+}
+.homeLTxt{
+
+    padding-top: 5px;
+    margin-left: 210px;
+
+}
+
+.other{
+
+    font-weight: bold;
+    margin-left: 550px;
+    font-size: 25px;
+
+}
+.otherTxt{
+
+    padding-top: 5px;
+    margin-left: 357px;
+
+}
+
+.criminalO{
+
+    font-weight: bold;
+    margin-left: 550px;
+    font-size: 25px;
+
+}
+.criminalTxt{
+
+    padding-top: 5px;
+    margin-left: 170px;
+
+}
+
+.driversL{
+
+    font-weight: bold;
+    margin-left: 550px;
+    font-size: 25px;
+
+}
+.driverTxt{
+
+    padding-top: 5px;
+    margin-left: 208px;
+
+}
+
+.citisenship{
+
+    font-weight: bold;
+    margin-left: 550px;
+    font-size: 25px;
+
+}
+.citizenTxt{
+
+    padding-top: 5px;
+    margin-left: 278px;
+
+}

@@ -1,0 +1,109 @@
+.educationHead{
+
+    text-align: center;
+    font-size: 40px;
+    padding: 300px 0px 0px 0px;
+
+}
+
+.educationDiv{
+
+    margin-left: 550px;
+    margin-bottom: -00px;
+    padding: 200px 0px 0px 0px;
+
+}
+
+.secondaryEdu{
+
+    font-size: 25px;
+
+}
+
+.institution{
+
+    font-size: 22px;
+
+}
+.institutionTxt{
+
+    font-size: 18px;
+    margin-left: 310px;
+    margin-top: 25px;
+
+}
+.period{
+
+    font-size: 22px;
+
+}
+.periodTxt{
+
+    font-size: 18px;
+    margin-top: 25px;
+    margin-left: 370px;
+
+}
+
+.institution2{
+
+    font-size: 22px;
+
+}
+.institutionTxt2{
+
+    font-size: 18px;
+    margin-top: 25px;
+    margin-left: 310px;
+
+}
+.period2{
+
+    font-size: 22px;
+
+}
+.periodTxt2{
+
+    font-size: 18px;
+    margin-top: 25px;
+    margin-left: 310px;
+
+}
+
+.tertiaryEdu{
+
+    font-size: 25px;
+
+}
+
+.institution3{
+
+    font-size: 22px;
+
+}
+.institutionTxt3{
+
+    font-size: 18px;
+    margin-top: 25px;
+    margin-left: 310px;
+
+}
+.period3{
+
+    font-size: 22px;
+
+}
+.periodTxt3{
+
+    font-size: 18px;
+    margin-top: 25px;
+    margin-left: 368px;
+
+}
+
+.education1{
+
+    display: flex;
+
+}
+

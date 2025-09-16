@@ -1,35 +1,12 @@
 body{
 
-    background: linear-gradient(
-        to right,
-        #000 0%,
-        #000 23%, /* Black up to just before 30% */
-        #ffffff 24%, /* Dark gray between 30% and 60% */
-        #ffffff 76%, /* Dark gray up to 60% */
-        #000 77%, /* Black from 60% onward */
-        #000 100%
-    );
-    background-color: #000; /* Black background */
+    background: black;
+    background-color: #000;
     position: relative;
-    min-height: 100vh; /* Ensure full height */
+    min-height: 100vh; 
+    color: white;
 }
 
-body::before, body::after{
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 2px; /* Thickness of the lines */
-    background-color: #000000; /* Matching the border color for consistency */
-}
-
-body::before{
-    left: 23%; /* Line at 30% mark */
-}
-
-body::after{
-    left: 77%; /* Line at 60% mark */
-}
 
 .wrapper{
 
@@ -48,611 +25,558 @@ body::after{
     height: 100x;
     background-color: rgba(0, 255, 255, 0.8);
     border: none;
+    border-radius: 2px;
 }
-.box :nth-child(1){
+/* .box :nth-child(1) {
     top: 12%;
-    left: 12%;
+    left: 2.4%;
     animation: animate 10s linear infinite;
 }
-.box :nth-child(2){
+.box :nth-child(2) {
     top: 18%;
-    left: 14%;
+    left: 9.1%;
     animation: animate 7s linear infinite;
 }
-.box :nth-child(3){
+.box :nth-child(3) {
     top: 35%;
-    left: 17%;
+    left: 13.7%;
     animation: animate 9s linear infinite;
 }
-.box :nth-child(4){
+.box :nth-child(4) {
     top: 4%;
-    left: 4%;
+    left: 0.8%;
     animation: animate 10s linear infinite;
 }
-.box :nth-child(5){
+.box :nth-child(5) {
     top: 57%;
-    left: 8%;
+    left: 4.5%;
     animation: animate 6s linear infinite;
 }
-.box :nth-child(6){
+.box :nth-child(6) {
     top: 69%;
-    left: 13%;
+    left: 11.2%;
     animation: animate 12s linear infinite;
 }
-.box :nth-child(7){
+.box :nth-child(7) {
     top: 3%;
-    left: 20%;
+    left: 14.9%;
     animation: animate 15s linear infinite;
 }
-.box :nth-child(8){
-    top: 80%;
-    left: 9%;
+.box :nth-child(8) {
+    top: 77%;
+    left: 6.3%;
     animation: animate 10s linear infinite;
 }
-.box :nth-child(9){
+.box :nth-child(9) {
     top: 1%;
-    left: 6%;
+    left: 3.1%;
     animation: animate 9s linear infinite;
 }
-.box :nth-child(10){
-    top: 83%;
-    left: 10%;
+.box :nth-child(10) {
+    top: 80%;
+    left: 7.8%;
     animation: animate 5s linear infinite;
 }
-.box :nth-child(11){
+.box :nth-child(11) {
     top: 5%;
-    left: 5%;
+    left: 1.2%;
     animation: animate 8s linear infinite;
 }
-.box :nth-child(12){
+.box :nth-child(12) {
     top: 15%;
-    left: 20%;
+    left: 12.6%;
     animation: animate 11s linear infinite;
 }
-.box :nth-child(13){
+.box :nth-child(13) {
     top: 25%;
-    left: 16%;
+    left: 10.4%;
     animation: animate 6s linear infinite;
 }
-.box :nth-child(14){
+.box :nth-child(14) {
     top: 30%;
-    left: 19%;
+    left: 14.1%;
     animation: animate 13s linear infinite;
 }
-.box :nth-child(15){
+.box :nth-child(15) {
     top: 40%;
-    left: 10%;
+    left: 5.7%;
     animation: animate 7s linear infinite;
 }
-.box :nth-child(16){
+.box :nth-child(16) {
     top: 50%;
-    left: 15%;
+    left: 8.9%;
     animation: animate 9s linear infinite;
 }
-.box :nth-child(17){
-    top: 60%;
-    left: 7%;
-    animation: animate 10s linear infinite;
-}
-.box :nth-child(18){
-    top: 70%;
-    left: 11%;
-    animation: animate 10s linear infinite;
-}
-.box :nth-child(19){
-    top: 80%;
-    left: 17%;
-    animation: animate 8s linear infinite;
-}
-.box :nth-child(20){
-    top: 82%;
-    left: 9%;
-    animation: animate 8s linear infinite;
-}
-.box :nth-child(21){
-    top: 10%;
-    left: 3%;
-    animation: animate 6s linear infinite;
-}
-.box :nth-child(22){
-    top: 22%;
-    left: 19%;
-    animation: animate 15s linear infinite;
-}
-.box :nth-child(23){
-    top: 28%;
-    left: 7%;
-    animation: animate 11s linear infinite;
-}
-.box :nth-child(24){
-    top: 33%;
-    left: 2%;
-    animation: animate 7s linear infinite;
-}
-.box :nth-child(25){
-    top: 45%;
-    left: 5%;
-    animation: animate 13s linear infinite;
-}
-.box :nth-child(26){
-    top: 55%;
-    left: 16%;
-    animation: animate 9s linear infinite;
-}
-.box :nth-child(27){
-    top: 65%;
-    left: 8%;
-    animation: animate 10s linear infinite;
-}
-.box :nth-child(28){
-    top: 75%;
-    left: 14%;
-    animation: animate 6s linear infinite;
-}
-.box :nth-child(29){
-    top: 82%;
-    left: 6%;
-    animation: animate 8s linear infinite;
-}
-.box :nth-child(30){
-    top: 72%;
-    left: 12%;
-    animation: animate 14s linear infinite;
-}
-.box :nth-child(31){
-    top: 7%;
-    left: 11%;
-    animation: animate 6s linear infinite;
-}
-.box :nth-child(32){
-    top: 19%;
-    left: 3%;
-    animation: animate 10s linear infinite;
-}
-.box :nth-child(33){
-    top: 27%;
-    left: 4%;
-    animation: animate 13s linear infinite;
-}
-.box :nth-child(34){
-    top: 36%;
-    left: 15%;
-    animation: animate 7s linear infinite;
-}
-.box :nth-child(35){
-    top: 48%;
-    left: 9%;
-    animation: animate 11s linear infinite;
-}
-.box :nth-child(36){
-    top: 58%;
-    left: 13%;
-    animation: animate 9s linear infinite;
-}
-.box :nth-child(37){
-    top: 66%;
-    left: 7%;
-    animation: animate 15s linear infinite;
-}
-.box :nth-child(38){
-    top: 74%;
-    left: 6%;
-    animation: animate 8s linear infinite;
-}
-.box :nth-child(39){
-    top: 83%;
-    left: 10%;
-    animation: animate 7s linear infinite;
-}
-.box :nth-child(40){
-    top: 82%;
-    left: 16%;
-    animation: animate 6s linear infinite;
-}
-.box :nth-child(41){
-    top: 3%;
-    left: 17%;
-    animation: animate 4s linear infinite;
-}
-.box :nth-child(42){
-    top: 9%;
-    left: 9%;
-    animation: animate 3s linear infinite;
-}
-.box :nth-child(43){
-    top: 12%;
-    left: 14%;
-    animation: animate 4s linear infinite;
-}
-.box :nth-child(44){
-    top: 11%;
-    left: 19%;
-    animation: animate 3s linear infinite;
-}
-.box :nth-child(45){
-    top: 48%;
-    left: 15%;
-    animation: animate 2s linear infinite;
-}
-.box :nth-child(46){
-    top: 58%;
-    left: 17%;
-    animation: animate 3s linear infinite;
-}
-.box :nth-child(47){
-    top: 68%;
-    left: 19%;
-    animation: animate 4s linear infinite;
-}
-.box :nth-child(48){
-    top: 78%;
-    left: 6%;
-    animation: animate 3s linear infinite;
-}
-.box :nth-child(49){
-    top: 82%;
-    left: 8%;
-    animation: animate 3s linear infinite;
-}
-.box :nth-child(50){
-    top: 83%;
-    left: 10%;
-    animation: animate 3s linear infinite;
-}
-.box :nth-child(51){
-    top: 13%;
-    left: 12%;
-    animation: animate 5s linear infinite;
-}
-.box :nth-child(52){
-    top: 23%;
-    left: 14%;
-    animation: animate 3s linear infinite;
-}
-.box :nth-child(53){
-    top: 33%;
-    left: 16%;
-    animation: animate 4s linear infinite;
-}
-.box :nth-child(54){
-    top: 1%;
-    left: 20%;
-    animation: animate 3s linear infinite;
-}
-.box :nth-child(55){
-    top: 53%;
-    left: 20%;
-    animation: animate 4s linear infinite;
-}
-.box :nth-child(56){
-    top: 12%;
-    left: 88%;
-    animation: animate 10s linear infinite;
-}
-
-.box :nth-child(57){
-    top: 18%;
-    left: 86%;
-    animation: animate 7s linear infinite;
-}
-
-.box :nth-child(58){
-    top: 35%;
-    left: 83%;
-    animation: animate 9s linear infinite;
-}
-
-.box :nth-child(59){
-    top: 4%;
-    left: 96%;
-    animation: animate 10s linear infinite;
-}
-
-.box :nth-child(60){
+.box :nth-child(17) {
     top: 57%;
-    left: 92%;
-    animation: animate 6s linear infinite;
-}
-
-.box :nth-child(61){
-    top: 69%;
-    left: 87%;
-    animation: animate 12s linear infinite;
-}
-
-.box :nth-child(62){
-    top: 3%;
-    left: 80%;
-    animation: animate 15s linear infinite;
-}
-
-.box :nth-child(63){
-    top: 80%;
-    left: 91%;
+    left: 3.4%;
     animation: animate 10s linear infinite;
 }
-
-.box :nth-child(64){
-    top: 1%;
-    left: 94%;
-    animation: animate 9s linear infinite;
-}
-
-.box :nth-child(65){
-    top: 83%;
-    left: 90%;
-    animation: animate 5s linear infinite;
-}
-
-.box :nth-child(66){
-    top: 5%;
-    left: 95%;
-    animation: animate 8s linear infinite;
-}
-
-.box :nth-child(67){
-    top: 15%;
-    left: 80%;
-    animation: animate 11s linear infinite;
-}
-
-.box :nth-child(68){
-    top: 25%;
-    left: 84%;
-    animation: animate 6s linear infinite;
-}
-
-.box :nth-child(69){
-    top: 30%;
-    left: 81%;
-    animation: animate 13s linear infinite;
-}
-
-.box :nth-child(70){
-    top: 40%;
-    left: 90%;
-    animation: animate 7s linear infinite;
-}
-
-.box :nth-child(71){
-    top: 50%;
-    left: 85%;
-    animation: animate 9s linear infinite;
-}
-
-.box :nth-child(72){
-    top: 60%;
-    left: 93%;
+.box :nth-child(18) {
+    top: 67%;
+    left: 11.8%;
     animation: animate 10s linear infinite;
 }
-
-.box :nth-child(73){
-    top: 70%;
-    left: 89%;
-    animation: animate 10s linear infinite;
-}
-
-.box :nth-child(74){
-    top: 80%;
-    left: 83%;
+.box :nth-child(19) {
+    top: 77%;
+    left: 13.2%;
     animation: animate 8s linear infinite;
 }
-
-.box :nth-child(75){
-    top: 82%;
-    left: 91%;
-    animation: animate 8s linear infinite;
-}
-
-.box :nth-child(76){
-    top: 10%;
-    left: 97%;
-    animation: animate 6s linear infinite;
-}
-
-.box :nth-child(77){
-    top: 22%;
-    left: 81%;
-    animation: animate 15s linear infinite;
-}
-
-.box :nth-child(78){
-    top: 28%;
-    left: 93%;
-    animation: animate 11s linear infinite;
-}
-
-.box :nth-child(79){
-    top: 33%;
-    left: 98%;
-    animation: animate 7s linear infinite;
-}
-
-.box :nth-child(80){
-    top: 45%;
-    left: 95%;
-    animation: animate 13s linear infinite;
-}
-
-.box :nth-child(81){
-    top: 55%;
-    left: 84%;
-    animation: animate 9s linear infinite;
-}
-
-.box :nth-child(82){
-    top: 65%;
-    left: 92%;
-    animation: animate 10s linear infinite;
-}
-
-.box :nth-child(83) {
-    top: 75%;
-    left: 86%;
-    animation: animate 6s linear infinite;
-}
-
-.box :nth-child(84){
-    top: 82%;
-    left: 94%;
-    animation: animate 8s linear infinite;
-}
-
-.box :nth-child(85){
-    top: 72%;
-    left: 88%;
-    animation: animate 14s linear infinite;
-}
-
-.box :nth-child(86){
-    top: 7%;
-    left: 89%;
-    animation: animate 6s linear infinite;
-}
-
-.box :nth-child(87){
-    top: 19%;
-    left: 97%;
-    animation: animate 10s linear infinite;
-}
-
-.box :nth-child(88){
-    top: 27%;
-    left: 96%;
-    animation: animate 13s linear infinite;
-}
-
-.box :nth-child(89){
-    top: 36%;
-    left: 85%;
-    animation: animate 7s linear infinite;
-}
-
-.box :nth-child(90){
-    top: 48%;
-    left: 91%;
-    animation: animate 11s linear infinite;
-}
-
-.box :nth-child(91){
-    top: 58%;
-    left: 87%;
-    animation: animate 9s linear infinite;
-}
-
-.box :nth-child(92){
-    top: 66%;
-    left: 93%;
-    animation: animate 15s linear infinite;
-}
-
-.box :nth-child(93){
-    top: 74%;
-    left: 94%;
-    animation: animate 8s linear infinite;
-}
-
-.box :nth-child(94){
-    top: 83%;
-    left: 90%;
-    animation: animate 7s linear infinite;
-}
-
-.box :nth-child(95){
-    top: 82%;
-    left: 84%;
-    animation: animate 6s linear infinite;
-}
-
-.box :nth-child(96){
-    top: 3%;
-    left: 83%;
-    animation: animate 4s linear infinite;
-}
-
-.box :nth-child(97){
-    top: 9%;
-    left: 91%;
-    animation: animate 3s linear infinite;
-}
-
-.box :nth-child(98){
-    top: 12%;
-    left: 86%;
-    animation: animate 4s linear infinite;
-}
-
-.box :nth-child(99){
-    top: 11%;
-    left: 81%;
-    animation: animate 3s linear infinite;
-}
-
-.box :nth-child(100){
-    top: 48%;
-    left: 85%;
-    animation: animate 2s linear infinite;
-}
-
-.box :nth-child(101){
-    top: 58%;
-    left: 83%;
-    animation: animate 3s linear infinite;
-}
-
-.box :nth-child(102){
-    top: 68%;
-    left: 81%;
-    animation: animate 4s linear infinite;
-}
-
-.box :nth-child(103){
-    top: 78%;
-    left: 94%;
-    animation: animate 3s linear infinite;
-}
-
-.box :nth-child(104){
+.box :nth-child(20) {
     top: 79%;
-    left: 92%;
+    left: 6.7%;
+    animation: animate 8s linear infinite;
+}
+.box :nth-child(21) {
+    top: 10%;
+    left: 0.3%;
+    animation: animate 6s linear infinite;
+}
+.box :nth-child(22) {
+    top: 22%;
+    left: 14.5%;
+    animation: animate 15s linear infinite;
+}
+.box :nth-child(23) {
+    top: 28%;
+    left: 4.8%;
+    animation: animate 11s linear infinite;
+}
+.box :nth-child(24) {
+    top: 33%;
+    left: 1.9%;
+    animation: animate 7s linear infinite;
+}
+.box :nth-child(25) {
+    top: 45%;
+    left: 7.2%;
+    animation: animate 13s linear infinite;
+}
+.box :nth-child(26) {
+    top: 55%;
+    left: 10.8%;
+    animation: animate 9s linear infinite;
+}
+.box :nth-child(27) {
+    top: 62%;
+    left: 5.1%;
+    animation: animate 10s linear infinite;
+}
+.box :nth-child(28) {
+    top: 72%;
+    left: 12.3%;
+    animation: animate 6s linear infinite;
+}
+.box :nth-child(29) {
+    top: 79%;
+    left: 3.8%;
+    animation: animate 8s linear infinite;
+}
+.box :nth-child(30) {
+    top: 69%;
+    left: 9.4%;
+    animation: animate 14s linear infinite;
+}
+.box :nth-child(31) {
+    top: 7%;
+    left: 6.6%;
+    animation: animate 6s linear infinite;
+}
+.box :nth-child(32) {
+    top: 19%;
+    left: 2.1%;
+    animation: animate 10s linear infinite;
+}
+.box :nth-child(33) {
+    top: 27%;
+    left: 4.3%;
+    animation: animate 13s linear infinite;
+}
+.box :nth-child(34) {
+    top: 36%;
+    left: 11.5%;
+    animation: animate 7s linear infinite;
+}
+.box :nth-child(35) {
+    top: 48%;
+    left: 8.2%;
+    animation: animate 11s linear infinite;
+}
+.box :nth-child(36) {
+    top: 58%;
+    left: 13.9%;
+    animation: animate 9s linear infinite;
+}
+.box :nth-child(37) {
+    top: 63%;
+    left: 5.4%;
+    animation: animate 15s linear infinite;
+}
+.box :nth-child(38) {
+    top: 71%;
+    left: 2.7%;
+    animation: animate 8s linear infinite;
+}
+.box :nth-child(39) {
+    top: 75%;
+    left: 9.7%;
+    animation: animate 7s linear infinite;
+}
+.box :nth-child(40) {
+    top: 77%;
+    left: 12.1%;
+    animation: animate 6s linear infinite;
+}
+.box :nth-child(41) {
+    top: 3%;
+    left: 14.3%;
+    animation: animate 4s linear infinite;
+}
+.box :nth-child(42) {
+    top: 9%;
+    left: 7.5%;
     animation: animate 3s linear infinite;
 }
-
-.box :nth-child(105){
+.box :nth-child(43) {
+    top: 12%;
+    left: 10.2%;
+    animation: animate 4s linear infinite;
+}
+.box :nth-child(44) {
+    top: 11%;
+    left: 13.4%;
+    animation: animate 3s linear infinite;
+}
+.box :nth-child(45) {
+    top: 48%;
+    left: 6.9%;
+    animation: animate 2s linear infinite;
+}
+.box :nth-child(46) {
+    top: 58%;
+    left: 11.1%;
+    animation: animate 3s linear infinite;
+}
+.box :nth-child(47) {
+    top: 68%;
+    left: 14.7%;
+    animation: animate 4s linear infinite;
+}
+.box :nth-child(48) {
+    top: 75%;
+    left: 3.3%;
+    animation: animate 3s linear infinite;
+}
+.box :nth-child(49) {
+    top: 79%;
+    left: 8.5%;
+    animation: animate 3s linear infinite;
+}
+.box :nth-child(50) {
     top: 80%;
-    left: 90%;
+    left: 10.7%;
     animation: animate 3s linear infinite;
 }
-
-.box :nth-child(106){
+.box :nth-child(51) {
     top: 13%;
-    left: 88%;
+    left: 4.2%;
     animation: animate 5s linear infinite;
 }
-
-.box :nth-child(107){
+.box :nth-child(52) {
     top: 23%;
-    left: 86%;
+    left: 7.7%;
     animation: animate 3s linear infinite;
 }
-
-.box :nth-child(108){
+.box :nth-child(53) {
     top: 33%;
-    left: 84%;
+    left: 12.8%;
     animation: animate 4s linear infinite;
 }
-
-.box :nth-child(109){
+.box :nth-child(54) {
     top: 1%;
-    left: 80%;
+    left: 9.3%;
     animation: animate 3s linear infinite;
 }
-
-.box :nth-child(110){
+.box :nth-child(55) {
     top: 53%;
-    left: 80%;
+    left: 5.9%;
     animation: animate 4s linear infinite;
 }
+.box :nth-child(56) {
+    top: 12%;
+    left: 87.4%;
+    animation: animate 10s linear infinite;
+}
+.box :nth-child(57) {
+    top: 18%;
+    left: 85.9%;
+    animation: animate 7s linear infinite;
+}
+.box :nth-child(58) {
+    top: 35%;
+    left: 89.2%;
+    animation: animate 9s linear infinite;
+}
+.box :nth-child(59) {
+    top: 4%;
+    left: 97.6%;
+    animation: animate 10s linear infinite;
+}
+.box :nth-child(60) {
+    top: 54%;
+    left: 92.1%;
+    animation: animate 6s linear infinite;
+}
+.box :nth-child(61) {
+    top: 66%;
+    left: 86.7%;
+    animation: animate 12s linear infinite;
+}
+.box :nth-child(62) {
+    top: 3%;
+    left: 90.4%;
+    animation: animate 15s linear infinite;
+}
+.box :nth-child(63) {
+    top: 77%;
+    left: 94.8%;
+    animation: animate 10s linear infinite;
+}
+.box :nth-child(64) {
+    top: 1%;
+    left: 88.3%;
+    animation: animate 9s linear infinite;
+}
+.box :nth-child(65) {
+    top: 77%;
+    left: 91.5%;
+    animation: animate 5s linear infinite;
+}
+.box :nth-child(66) {
+    top: 5%;
+    left: 96.2%;
+    animation: animate 8s linear infinite;
+}
+.box :nth-child(67) {
+    top: 15%;
+    left: 85.1%;
+    animation: animate 11s linear infinite;
+}
+.box :nth-child(68) {
+    top: 25%;
+    left: 89.7%;
+    animation: animate 6s linear infinite;
+}
+.box :nth-child(69) {
+    top: 30%;
+    left: 93.4%;
+    animation: animate 13s linear infinite;
+}
+.box :nth-child(70) {
+    top: 40%;
+    left: 87.9%;
+    animation: animate 7s linear infinite;
+}
+.box :nth-child(71) {
+    top: 47%;
+    left: 91.2%;
+    animation: animate 9s linear infinite;
+}
+.box :nth-child(72) {
+    top: 57%;
+    left: 95.6%;
+    animation: animate 10s linear infinite;
+}
+.box :nth-child(73) {
+    top: 67%;
+    left: 88.5%;
+    animation: animate 10s linear infinite;
+}
+.box :nth-child(74) {
+    top: 77%;
+    left: 92.7%;
+    animation: animate 8s linear infinite;
+}
+.box :nth-child(75) {
+    top: 79%;
+    left: 86.3%;
+    animation: animate 8s linear infinite;
+}
+.box :nth-child(76) {
+    top: 10%;
+    left: 94.1%;
+    animation: animate 6s linear infinite;
+}
+.box :nth-child(77) {
+    top: 22%;
+    left: 89.8%;
+    animation: animate 15s linear infinite;
+}
+.box :nth-child(78) {
+    top: 28%;
+    left: 93.2%;
+    animation: animate 11s linear infinite;
+}
+.box :nth-child(79) {
+    top: 33%;
+    left: 97.5%;
+    animation: animate 7s linear infinite;
+}
+.box :nth-child(80) {
+    top: 42%;
+    left: 90.6%;
+    animation: animate 13s linear infinite;
+}
+.box :nth-child(81) {
+    top: 52%;
+    left: 85.4%;
+    animation: animate 9s linear infinite;
+}
+.box :nth-child(82) {
+    top: 62%;
+    left: 91.9%;
+    animation: animate 10s linear infinite;
+}
+.box :nth-child(83) {
+    top: 72%;
+    left: 87.3%;
+    animation: animate 6s linear infinite;
+}
+.box :nth-child(84) {
+    top: 79%;
+    left: 94.7%;
+    animation: animate 8s linear infinite;
+}
+.box :nth-child(85) {
+    top: 69%;
+    left: 89.1%;
+    animation: animate 14s linear infinite;
+}
+.box :nth-child(86) {
+    top: 7%;
+    left: 92.4%;
+    animation: animate 6s linear infinite;
+}
+.box :nth-child(87) {
+    top: 19%;
+    left: 96.8%;
+    animation: animate 10s linear infinite;
+}
+.box :nth-child(88) {
+    top: 27%;
+    left: 90.2%;
+    animation: animate 13s linear infinite;
+}
+.box :nth-child(89) {
+    top: 36%;
+    left: 85.7%;
+    animation: animate 7s linear infinite;
+}
+.box :nth-child(90) {
+    top: 45%;
+    left: 91.3%;
+    animation: animate 11s linear infinite;
+}
+.box :nth-child(91) {
+    top: 55%;
+    left: 87.8%;
+    animation: animate 9s linear infinite;
+}
+.box :nth-child(92) {
+    top: 63%;
+    left: 93.6%;
+    animation: animate 15s linear infinite;
+}
+.box :nth-child(93) {
+    top: 71%;
+    left: 89.4%;
+    animation: animate 8s linear infinite;
+}
+.box :nth-child(94) {
+    top: 79%;
+    left: 95.2%;
+    animation: animate 7s linear infinite;
+}
+.box :nth-child(95) {
+    top: 79%;
+    left: 86.1%;
+    animation: animate 6s linear infinite;
+}
+.box :nth-child(96) {
+    top: 3%;
+    left: 90.7%;
+    animation: animate 4s linear infinite;
+}
+.box :nth-child(97) {
+    top: 9%;
+    left: 94.3%;
+    animation: animate 3s linear infinite;
+}
+.box :nth-child(98) {
+    top: 12%;
+    left: 88.9%;
+    animation: animate 4s linear infinite;
+}
+.box :nth-child(99) {
+    top: 11%;
+    left: 85.2%;
+    animation: animate 3s linear infinite;
+}
+.box :nth-child(100) {
+    top: 45%;
+    left: 91.8%;
+    animation: animate 2s linear infinite;
+}
+.box :nth-child(101) {
+    top: 55%;
+    left: 87.4%;
+    animation: animate 3s linear infinite;
+}
+.box :nth-child(102) {
+    top: 65%;
+    left: 93.1%;
+    animation: animate 4s linear infinite;
+}
+.box :nth-child(103) {
+    top: 75%;
+    left: 89.6%;
+    animation: animate 3s linear infinite;
+}
+.box :nth-child(104) {
+    top: 76%;
+    left: 94.9%;
+    animation: animate 3s linear infinite;
+}
+.box :nth-child(105) {
+    top: 77%;
+    left: 90.3%;
+    animation: animate 3s linear infinite;
+}
+.box :nth-child(106) {
+    top: 13%;
+    left: 86.7%;
+    animation: animate 5s linear infinite;
+}
+.box :nth-child(107) {
+    top: 23%;
+    left: 92.2%;
+    animation: animate 3s linear infinite;
+}
+.box :nth-child(108) {
+    top: 33%;
+    left: 88.4%;
+    animation: animate 4s linear infinite;
+}
+.box :nth-child(109) {
+    top: 1%;
+    left: 95.7%;
+    animation: animate 3s linear infinite;
+}
+.box :nth-child(110) {
+    top: 50%;
+    left: 90.1%;
+    animation: animate 4s linear infinite;
+} */
 
 @keyframes animate{
     0% {
