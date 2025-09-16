@@ -177,7 +177,7 @@ const circles = document.querySelectorAll('.infoCircle');
 const circleToSection = {
     personInfo: document.querySelector('.details'),
     secondaryEd: document.querySelector('.education'),
-    tertiaryEd: document.querySelector('.tertiaryEd'),
+    tertiaryEd: document.querySelector('.terEd'),
     skills: document.querySelector('.skills')
 };
 

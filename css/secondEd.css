@@ -2,7 +2,6 @@
 
     text-align: center;
     font-size: 40px;
-    padding: 300px 0px 0px 0px;
 
 }
 
@@ -10,13 +9,20 @@
 
     margin-left: 550px;
     margin-bottom: -00px;
-    padding: 200px 0px 0px 0px;
+    padding: 100px 0px 0px 0px;
 
 }
 
 .secondaryEdu{
 
     font-size: 25px;
+    padding-bottom: 15px;
+
+}
+
+.tertiaryEdu{
+
+    padding-bottom: 15px;
 
 }
 
@@ -29,7 +35,8 @@
 
     font-size: 18px;
     margin-left: 310px;
-    margin-top: 25px;
+    margin-top: 0px;
+    padding: 0px 0px 15px 0px;
 
 }
 .period{
@@ -40,8 +47,9 @@
 .periodTxt{
 
     font-size: 18px;
-    margin-top: 25px;
     margin-left: 370px;
+    margin-top: 0px;
+    padding: 0px 0px 15px 0px;
 
 }
 
@@ -53,8 +61,9 @@
 .institutionTxt2{
 
     font-size: 18px;
-    margin-top: 25px;
     margin-left: 310px;
+    margin-top: 0px;
+    padding: 0px 0px 15px 0px;
 
 }
 .period2{
@@ -84,8 +93,9 @@
 .institutionTxt3{
 
     font-size: 18px;
-    margin-top: 25px;
     margin-left: 310px;
+    margin-top: 0px;
+    padding: 0px 0px 15px 0px;
 
 }
 .period3{
@@ -96,14 +106,16 @@
 .periodTxt3{
 
     font-size: 18px;
-    margin-top: 25px;
     margin-left: 368px;
+    margin-top: 0px;
+    padding: 0px 0px 15px 0px;
 
 }
 
 .education1{
 
     display: flex;
+    padding: 10px 0px 10px 0px;
 
 }
 
