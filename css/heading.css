@@ -8,7 +8,7 @@ body {
 }
 
 .head {
-    background-image: linear-gradient(rgb(0, 0, 0), rgba(4, 9, 30, 0.733), rgba(4, 9, 30, 0.315), rgb(0, 0, 0)), url(/images/Background.JPG);
+    background-image: linear-gradient(rgb(0, 0, 0), rgba(4, 9, 30, 0.733), rgba(4, 9, 30, 0.315), rgb(0, 0, 0)), url(images/Background.JPG);
     border-bottom: solid black 5px;
     min-height: 60vh;
     min-width: 100%;
